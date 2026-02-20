@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
-
-
-
         body {
-background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.78) 35%, rgba(163, 233, 247, 0.88) 100%)} 
-.container{
+background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.78) 35%, rgba(163, 233, 247, 0.88) 100%); .container{
   grid-template-columns: auto auto auto;
   border-radius: 5px;
   display: grid;
@@ -37,22 +33,23 @@ background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
- position:relative ;
+position:relative ;
 }
 
-#box:hover {
+.box:hover {
  background: linear-gradient(180deg,rgba(210, 123, 247, 0.35) 10%, rgba(252, 192, 71, 0.35) 50%);
 }
 
-#box h3 {
+.box h3 {
   font-size: 24px;
   color: #3545C5;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-#box {
+.box {
   border: 1px solid #fafafad4;
   max-width: 250px;
+  width: 100%;
   border-radius: 20%;
   text-align: center;
   display: inline-block;
@@ -61,11 +58,7 @@ background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.
   margin: 15px;
   padding: 10px;
   font-size: 30px;
-  width: 100px; 
-  height: 100px;
- line-height:100px;  
 }
-
 
 h1 {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -85,39 +78,46 @@ h1 {
 <h5>1</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
 </div>
-<div id="card002" class="box">
+
+<div id="card002" class="box" >
       <h5>2</h5>
 <p style="font-size:3em; font-family: 'Courier New', Courier, monospace; text-align: center; " >X</p>
 </div>
+
 <div id="card003" class="box">
     <h5>3</h5>
 <p style="font-size:3em; font-family: 'Courier New', Courier, monospace; text-align: center; " >O</p>
 </div>
+
 <div id="card004" class="box">
   <h5>4</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
 </div>
+
 <div id="card005" class="box">
   <h5>5</h5>
 <p style="font-size:3em; font-family: 'Courier New', Courier, monospace; text-align: center; " >X</p>
+
 </div>
+
 <div id="card006" class="box">
 <h5>6</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
-</div>    
-<div id="card007" class="box">
+</div>
+       
+<div id="card007" class="box" >
 <h5>7</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
 </div>
+
 <div id="card008" class="box" >
   <h5>8</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
 </div>
+
 <div id="card009" class="box" >
 <h5>9</h5>
   <img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto">
-</div>
-</div>
 <script>
     
 const NUM_SQUARES = 9;
@@ -131,7 +131,8 @@ document.write( "<div class='box' id='" + id + "'></div>" );
             document.getElementById('card006').innerHTML = 'O';
         
 </script>
-
+</div>
+</div>
 <div class="container_001">
 <div class="button">
 <button onclick="alert('Should We Get Started?')">Click Me To Start</button>
