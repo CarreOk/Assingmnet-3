@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
+
+
+
         body {
 background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.78) 35%, rgba(163, 233, 247, 0.88) 100%)} 
 .container{
@@ -34,7 +37,7 @@ background: linear-gradient(0deg,rgba(2, 0, 36, 0.76) 0%, rgba(116, 116, 181, 0.
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-position:relative ;
+ position:relative ;
 }
 
 #box:hover {
@@ -50,7 +53,6 @@ position:relative ;
 #box {
   border: 1px solid #fafafad4;
   max-width: 250px;
-  width: 100%;
   border-radius: 20%;
   text-align: center;
   display: inline-block;
@@ -59,7 +61,14 @@ position:relative ;
   margin: 15px;
   padding: 10px;
   font-size: 30px;
+  width: 100px; 
+  height: 100px;
+ line-height:
+100px; 
+text-align: center;
+vertical-align: top; 
 }
+
 
 h1 {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -77,6 +86,16 @@ h1 {
 </p>
 <h1 style="text-align: center; font: 3.6em courier;">Tic Tac Toe Game</h1>
 
+<div id="card001" class="box">1<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+<div id="card002" class="box">O</div>
+<div id="card003" class="box">X</div>
+<div id="card004" class="box">4<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+<div id="card005" class="box">5<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+<div id="card006" class="box">X</div>
+<div id="card007" class="box">7<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+<div id="card008" class="box">8<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+<div id="card009" class="box">9<img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="30%" height="auto"></div>
+    
 <script>
 const NUM_SQUARES = 9;
 for (i=0; i<NUM_SQUARES; i++)
@@ -84,17 +103,11 @@ for (i=0; i<NUM_SQUARES; i++)
 id = "sq"+i;
 document.write( "<div class='box' id='" + id + "'></div>" );
 }
+            document.getElementById('card002').innerHTML = 'X';
+            document.getElementById('card003').innerHTML = 'X';
+            document.getElementById('card006').innerHTML = 'O';
+        
 </script>
-<div id="card001" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-<div id="card002" class="box">O</div>
-<div id="card003" class="box">X</div>
-<div id="card004" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-<div id="card005" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-<div id="card006" class="box">X</div>
-<div id="card007" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-<div id="card008" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-<div id="card009" class="box"><img src="WhenDovesCryTicTacTo.png" alt="Prince's When Doves Cry Album Cover " width="100%" height="auto"></div>
-    
 
 <div class="container_001">
 <div class="button">
